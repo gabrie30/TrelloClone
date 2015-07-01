@@ -3,7 +3,7 @@
 # Table name: items
 #
 #  id         :integer          not null, primary key
-#  title      :string(255)      not null
+#  title      :string           not null
 #  card_id    :integer          not null
 #  done       :boolean          default(FALSE)
 #  created_at :datetime

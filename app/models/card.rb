@@ -3,7 +3,7 @@
 # Table name: cards
 #
 #  id          :integer          not null, primary key
-#  title       :string(255)      not null
+#  title       :string           not null
 #  list_id     :integer          not null
 #  description :text
 #  ord         :float            default(0.0)

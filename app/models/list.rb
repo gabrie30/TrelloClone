@@ -3,7 +3,7 @@
 # Table name: lists
 #
 #  id         :integer          not null, primary key
-#  title      :string(255)      not null
+#  title      :string           not null
 #  board_id   :integer          not null
 #  ord        :float            default(0.0)
 #  created_at :datetime
