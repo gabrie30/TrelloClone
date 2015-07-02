@@ -2,3 +2,5 @@
 # it should include the board
 #  - its lists
 #    - the cards for each list
+
+json.(@board, :id, :title, :created_at, :updated_at, :user_id)

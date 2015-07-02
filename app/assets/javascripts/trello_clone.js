@@ -4,10 +4,11 @@ window.TrelloClone = {
   Views: {},
   Routers: {},
   initialize: function() {
-    var boards = new TrelloClone.Collections.Boards();
+    boards = new TrelloClone.Collections.Boards();
     boards.fetch({
-      success: function() {
-        console.log(this);
+      success: function(){
+        new TrelloClone.Routers.Router({boards: boards, $rootEl: $("div #main")});
+        Backbone.history.start();
       }.bind(this)
     });
   }

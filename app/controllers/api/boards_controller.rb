@@ -26,6 +26,7 @@ module Api
 
       if @board.is_member?(current_user)
         render :show
+        # render "boards/show"
       else
         render json: ["You aren't a member of this board"], status: 403
       end
